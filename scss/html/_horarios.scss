@@ -1,0 +1,56 @@
+@import "vars/variable";
+@import "../mixin/mixin";
+
+/* css horarios */
+.main-horarios{
+    text-align: center;
+}
+
+#lista-horarios{
+    background-color: $color-secundario;
+    gap: 2rem;
+    margin: 15px;
+    padding: 15px;
+    list-style: none;
+    @include grid;
+}
+
+#lunes{
+    color: $color-activo;
+    grid-area: lunes;
+}
+
+#martes{
+    color: $color-activo;
+    grid-area: martes;
+}
+
+#miercoles{
+    color: $color-activo;
+    grid-area: miercoles;
+}
+
+#jueves{
+    color: $color-activo;
+    grid-area: jueves;
+}
+
+#viernes{
+    color: $color-activo;
+    grid-area: viernes;
+}
+
+#sabado{
+    color: $color-activo;
+    grid-area: sabado;
+}
+
+#domingo{
+    color: red;
+    grid-area: domingo;
+}
+
+#feriado{
+    color: $color-activo;
+    grid-area: feriado;
+}

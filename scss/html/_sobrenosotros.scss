@@ -1,0 +1,60 @@
+
+/* css de SobreNosotros.html */
+
+.main-SobreNosotros{
+    margin: 2rem;
+    padding: 3rem;
+    background-color: $color-secundario;
+    #img-main-SobreNosotros{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    #img-main-SobreNosotrosDos{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    #imagen-main-SobreNosotrosTres{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    #div-main-SobreNosotros{
+        padding: 2rem;
+        background-color: $color-terceario;
+    }
+}
+
+
+.lista-SobreNosotros{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-area:
+    " lista1 lista2 "
+    " lista3 lista4 "
+    " lista5 lista6 ";
+    #lista-contenida-SobreNosotros{
+        grid-area: lista1;
+    }
+    #lista-contenida-SobreNosotrosDos{
+        grid-area: lista2;
+    }
+    #lista-contenida-SobreNosotrosTres{
+        grid-area: lista3;
+    }
+    #lista-contenida-SobreNosotrosCuatro{
+        grid-area: lista4;
+    }
+    .lista-contenida-SobreNosotrosCinco{
+        grid-area: lista5;
+    }
+    #lista-contenida-SobreNosotrosSeis{
+        grid-area: lista6;
+    }
+}

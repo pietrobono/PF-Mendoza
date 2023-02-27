@@ -1,0 +1,66 @@
+@import "vars/variable";
+
+
+/* CSS de Galeria */
+
+.carousel-inner img{
+    width: 100%;
+    max-height: 500px;
+}
+
+#main-galeria{
+    background-color: $color-secundario;
+}
+
+
+#section-imagen-galeria{
+    background-color: $color-secundario;
+    display: flex;
+    margin: 5px;
+    padding: 7px;
+}
+
+#imagen-galeria:hover{
+    box-shadow: 2px 2px black;
+}
+
+#section-galeria{
+    background-color: $color-secundario;
+    margin: 3rem;
+    padding: 3rem;
+}
+
+#div-grid-galeria{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: $color-secundario;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    grid-area:
+    "grid1 grid3"
+    "grid2 grid4"
+    "grid5 grid6"
+;
+}
+
+.div-contenedor-gridGaleria{
+    grid-area: grid1;
+}
+
+.div-contenedor-gridGaleria3{
+    grid-area: grid3;
+}
+
+.div-contenedor-gridGaleria4{
+    grid-area: grid4;
+}
+
+.div-contenedor-gridGaleria5{
+    grid-area: grid5;
+}
+
+.div-contenedor-gridGaleria6{
+    grid-area: grid6;
+}
+

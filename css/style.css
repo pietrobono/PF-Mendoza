@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+/* css index */
+body {
+  background-color: #210b6e;
+  font-weight: bolder;
+  color: whitesmoke; }
+
+#div-header-index {
+  background-image: url(../images/mecanico-automoviles-trabajando-garaje-servicio-reparacion_146671-18358.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden; }
+
+#h3-header {
+  color: #ae9393; }
+
+#logo-index {
+  margin: 250px; }
+
+#main-index {
+  margin: 20px;
+  padding: 30px;
+  background-color: #222135; }
+
+#section-index {
+  margin: 20px;
+  padding: 30px;
+  background-color: #222135; }
+
+#section-imagen-index {
+  background-color: #222135;
+  display: flex;
+  justify-content: center; }
+
+#imagen-index:hover {
+  box-shadow: 4px 4px black; }
+
+.container-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px; }
+  .container-index .contenido-index¨ {
+    margin: auto;
+    padding: auto;
+    background-color: #140353;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+
+.contenido-index h2 {
+  margin-top: 0; }
+  .contenido-index h2 p {
+    margin-bottom: 0; }
+
+#footer-index {
+  background-image: url(../images/metal-plate-floor-texture-pattern-in-industrial-plant-background-wallpaper-and-decoration-concept-3d-illustation-rendering-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  padding: 10px; }
+
+/* media queries */
+/* estilo mobile */
+@media screen and (min-width: 320px) and (max-width: 766px) {
+  #imagen-index {
+    display: none; }
+  #imagen-galeria {
+    display: none; }
+  #div-caja-contactos {
+    display: none; }
+  .mapa-horarios {
+    display: none; }
+  .mapa-horarios-tablet {
+    display: none; }
+  #prueba-img {
+    width: 100%;
+    height: 100%; } }
+
+/* estilo tablet */
+@media screen and (min-width: 766px) and (max-width: 1024px) {
+  #imagen-galeria {
+    display: none; }
+  #prueba-img {
+    min-width: 766px;
+    max-width: 1024px; }
+  /* horarios */
+  .mapa-horarios {
+    display: none; }
+  .mapa-horarios-mobile {
+    display: none; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .mapa-horarios-tablet {
+    display: none; }
+  .mapa-horarios-mobile {
+    display: none; } }
+
+/* CSS de Galeria */
+.carousel-inner img {
+  width: 100%;
+  max-height: 500px; }
+
+#main-galeria {
+  background-color: #140353; }
+
+#section-imagen-galeria {
+  background-color: #140353;
+  display: flex;
+  margin: 5px;
+  padding: 7px; }
+
+#imagen-galeria:hover {
+  box-shadow: 2px 2px black; }
+
+#section-galeria {
+  background-color: #140353;
+  margin: 3rem;
+  padding: 3rem; }
+
+#div-grid-galeria {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #140353;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-area: "grid1 grid3" "grid2 grid4" "grid5 grid6"; }
+
+.div-contenedor-gridGaleria {
+  grid-area: grid1; }
+
+.div-contenedor-gridGaleria3 {
+  grid-area: grid3; }
+
+.div-contenedor-gridGaleria4 {
+  grid-area: grid4; }
+
+.div-contenedor-gridGaleria5 {
+  grid-area: grid5; }
+
+.div-contenedor-gridGaleria6 {
+  grid-area: grid6; }
+
+#input-contactos {
+  padding: 10px;
+  margin: 20px; }
+
+/* estilos de contactos.html */
+.div-contenedor {
+  background-color: crimson;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto; }
+
+.div-caja-formulario form form, textarea {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 10px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px; }
+
+.contenedor-random-contactos {
+  color: crimson; }
+
+/* css de SobreNosotros.html */
+.main-SobreNosotros {
+  margin: 2rem;
+  padding: 3rem;
+  background-color: #140353; }
+  .main-SobreNosotros #img-main-SobreNosotros {
+    width: 100%;
+    height: 100%;
+    align-items: center; }
+  .main-SobreNosotros #img-main-SobreNosotrosDos {
+    width: 100%;
+    height: 100%;
+    align-items: center; }
+  .main-SobreNosotros #imagen-main-SobreNosotrosTres {
+    width: 100%;
+    height: 100%;
+    align-items: center; }
+  .main-SobreNosotros #div-main-SobreNosotros {
+    padding: 2rem;
+    background-color: #222135; }
+
+.lista-SobreNosotros {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-area: " lista1 lista2 " " lista3 lista4 " " lista5 lista6 "; }
+  .lista-SobreNosotros #lista-contenida-SobreNosotros {
+    grid-area: lista1; }
+  .lista-SobreNosotros #lista-contenida-SobreNosotrosDos {
+    grid-area: lista2; }
+  .lista-SobreNosotros #lista-contenida-SobreNosotrosTres {
+    grid-area: lista3; }
+  .lista-SobreNosotros #lista-contenida-SobreNosotrosCuatro {
+    grid-area: lista4; }
+  .lista-SobreNosotros .lista-contenida-SobreNosotrosCinco {
+    grid-area: lista5; }
+  .lista-SobreNosotros #lista-contenida-SobreNosotrosSeis {
+    grid-area: lista6; }
+
+/* css horarios */
+.main-horarios {
+  text-align: center; }
+
+#lista-horarios {
+  background-color: #140353;
+  gap: 2rem;
+  margin: 15px;
+  padding: 15px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 3fr);
+  grid-area: " lunes martes " " miercoles jueves " " viernes sabado " " domingo feriado"; }
+
+#lunes {
+  color: #3bd53b;
+  grid-area: lunes; }
+
+#martes {
+  color: #3bd53b;
+  grid-area: martes; }
+
+#miercoles {
+  color: #3bd53b;
+  grid-area: miercoles; }
+
+#jueves {
+  color: #3bd53b;
+  grid-area: jueves; }
+
+#viernes {
+  color: #3bd53b;
+  grid-area: viernes; }
+
+#sabado {
+  color: #3bd53b;
+  grid-area: sabado; }
+
+#domingo {
+  color: red;
+  grid-area: domingo; }
+
+#feriado {
+  color: #3bd53b;
+  grid-area: feriado; }
