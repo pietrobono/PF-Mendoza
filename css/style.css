@@ -89,8 +89,8 @@ body {
   #imagen-galeria {
     display: none; }
   #prueba-img {
-    min-width: 766px;
-    max-width: 1024px; }
+    min-width: 30rem;
+    max-width: 30rem; }
   /* horarios */
   .mapa-horarios {
     display: none; }
@@ -98,6 +98,12 @@ body {
     display: none; } }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #imagen-galeria{
+  min-width: 30rem;
+  max-width: 50rem;}
+  #prueba-img{
+  min-width: 30rem;
+  max-width: 50rem;}
   .mapa-horarios-tablet {
     display: none; }
   .mapa-horarios-mobile {
@@ -132,7 +138,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-area: "grid1 grid3" "grid2 grid4" "grid5 grid6"; }
+  grid-area: "grid1 grid3"
+ "grid2 grid4"
+ "grid5 grid6"; }
 
 .div-contenedor-gridGaleria {
   grid-area: grid1; }
@@ -202,7 +210,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-area: " lista1 lista2 " " lista3 lista4 " " lista5 lista6 "; }
+  grid-area: " lista1 lista2 "
+ " lista3 lista4 "
+ " lista5 lista6 "; }
   .lista-SobreNosotros #lista-contenida-SobreNosotros {
     grid-area: lista1; }
   .lista-SobreNosotros #lista-contenida-SobreNosotrosDos {
@@ -229,7 +239,10 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 3fr);
-  grid-area: " lunes martes " " miercoles jueves " " viernes sabado " " domingo feriado"; }
+  grid-area: " lunes martes "
+ " miercoles jueves "
+ " viernes sabado "
+ " domingo feriado"; }
 
 #lunes {
   color: #3bd53b;

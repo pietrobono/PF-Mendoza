@@ -61,6 +61,14 @@
 }
 
 @media screen and (min-width:1024px) and (max-width: 1440px){
+    #imagen-galeria{
+        min-width: 30rem;
+        max-width: 50rem;
+      }
+      #prueba-img{
+        min-width: 30rem;
+        max-width: 50rem;
+      }
 
     .mapa-horarios-tablet{
         display: none;
